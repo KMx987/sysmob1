@@ -1,34 +1,26 @@
-const age = 50;
-let myAge = 99;
-//age = 101; próba nadania nowej wartości zmiennej age zadeklarowanej za pomocą const.
-const myName = "Kamil";
+const number1 = 5;
+const number2 = 10;
 
-const human = {
-    age: 23,
-    name: "Kamil",
-};
+function subtract(a, b) {
+    return a - b;
+}
 
-const human2 = {
-    age: 20,
-    name: "Antoni",
-};
+console.log(`Wynik odejmowania ${number2} - ${number1} =`, subtract(number2, number1));
 
-const human3 = human2;
-console.log(human);
-console.log(human2)
+function multiply(a, b) {
+    return a * b;
+}
 
-console.log("human2 ==== human3", human2 === human3);
-console.log("human ==== human2", human === human2);
+console.log(`Wynik mnozenia ${number2} * ${number1} =`, multiply(number2, number1));
 
-console.log(myAge);
-console.log(age);
-console.log("Moje imie to", myName);
+function division(a, b) {
+    if (b === 0) {
+        return "Error:division by zero!";
+    }
+    return a / b;
+}
 
-
-
-
-
-
+console.log(`Wynik dzielenia ${number2} / ${number1} =`, division(number2, number1));
 
 
 
